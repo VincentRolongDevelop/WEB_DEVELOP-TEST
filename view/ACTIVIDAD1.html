@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/estilo_paginaDW3.css">
+
+</head>
+<body>
+   
+    <!--Menu  de unidades de actividades-->
+    <ul class="menu">
+        <li><a href="ACTIVIDADES_DW.html">INICIO</a></li>
+        <li><a href="DATOS.html">DATOS</a></li>
+        <li><a href="#">UNIDAD #1</a></li>
+        <li><a href="#">UNIDAD #2</a></li>
+        <li><a href="#">UNIDAD #3</a></li>
+        <li><a href="#">UNIDAD #4</a></li>
+    </ul>
+
+    <br/>
+    <h1 class="titulo">ACTIVIDAD UNIDAD 1</h1> 
+    <br/>  
+    
+    <br/>
+    <a href="../model/GUIA DE FORMULARIOS HTML - PARA LA ACTIVIDAD 1.pdf" target="_blanck"><button>Abrir PDF</button></a>
+    <br/>
+    <br/>
+    <h3 class="subTitulo">Ejemplos de formularios</h3>
+
+        <!--Formulario de ejemplos -->
+        <div class="formularios0">
+         <form action="../controller/form0.php" method="POST" id="form0">
+            <fieldset style="width:40%;text-align: left;">
+                <legend>Formulario 0</legend>
+                <table>
+                    <tr>
+                        <th style="text-align: right">Nombre</th>
+                        <td><input type="text" name="nombre" id="name"> </td>
+                    </tr>
+                        <tr>
+                            <th><input type="submit"></th>
+                            <td><input type="reset"></td>
+                        </tr>
+                </table>
+
+        </form>   
+
+        
+        </div>
+
+        <br/>
+        <!--Primer formulario-->
+        <div class="formularios">
+            <form action="../controller/form1.php" method="POST" id="form1">
+                <fieldset style="width:40%;text-align: left;">
+                <legend>Formulario 1</legend>
+                <table>
+                    <tr>
+                        <th style="text-align: right">Codigo:</th>
+                        <td><input type="number" name="Codigo" id="code" placeholder="Ingrese su codigo" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="text-align: right">Clave:</th>
+                        <td><input type="password" name="Clave" id="pass" placeholder="Ingrese su clave" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="text-align: right">E-mail:</th>
+                        <td><input type="email" name="Email" placeholder="Ingrese su email" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="text-align: right">Telefono:</th>
+                        <td><input type="tel" name="Celular" id="phone" placeholder="Ingrese su telefono" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="text-align: right">Buscar:</th>
+                        <td><input type="search" name="Buscar" placeholder="Ingrese su busqueda" required></td>
+                    </tr>
+
+                    <tr>
+                        <th> <input type="submit"value="Enviar"></th>
+                        <td><input type="reset"></td>
+                    </tr>
+                </table>
+                
+                </fieldset>
+            </form>
+            </div>
+
+        <br/>
+
+        <!--Segundo formulario-->
+        <div class="formularios2">
+        <form action="../controller/form2.php" method="POST">
+            <fieldset style="width:40%;text-align: left;">
+            <legend>Formulario 2</legend>
+            <table>
+                <tr>
+                    <th style="text-align: left">Genero:</th>
+                    <td>
+                        Masculino <input type="radio" name="genero" value="M">
+                        <br/>
+                        Femenino <input type="radio" name="genero" value="F">
+                    </td>
+                </tr>
+                <tr><td colspan="2"><hr/></td></tr>
+                <tr>
+                    <th style="text-align: left">Hobbies:</th>
+                    <td>
+                        Leer <input type="checkbox" name="hobbie1" value="leer">
+                        <br/>
+                        Cine <input type="checkbox" name="hobbie2" value="cine">
+                        <br/>
+                        Tv <input type="checkbox" name="hobbie3" value="tv">
+                        <br/>
+                        Jugar <input type="checkbox" name="hobbie4" value="jugar">
+                        </td>
+                </tr>
+                <tr><td colspan="2"><hr/></td></tr>
+                <tr>
+                    <th><input type="submit" value="Enviar"></th>
+                    <td><input type="reset"></td>
+                </tr>
+            </table>
+            </fieldset>
+        </form>
+        </div>
+
+        <br/>
+        <!--Tercer formulario-->
+        <div class="formularios3">
+        <form action="../controller/form3.php" method="POST">
+            <fieldset style="width:40%;text-align: left;">
+            <legend>Formulario 3</legend>
+            <table>
+                <tr>
+                    <th style="text-align: left">Fecha:</th>
+                    <td>
+                        <input type="date" name="fecha" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th style="text-align: left">Fecha y Hora:</th>
+                    <td>
+                        <input type="datetime" name="fechacompleta" required>
+                    </td>
+                    </tr>
+
+                    <tr>
+                        <th style="text-align: left">Mes:</th>
+                        <td>
+                            <input type="month" name="mes" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left">Hora:</th>
+                        <td>
+                            <input type="time" name="hora" required>
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><hr/></td></tr>
+
+                    <tr>
+                        <th> <input type="submit" value="Enviar"></th>
+                        <td><input type="reset"></td>
+
+                    </tr>
+            </table>
+            </fieldset>
+        </form>
+
+        </div>
+
+        <br/>
+
+        <!--Cuarto formulario-->
+        <div class="formularios4">
+        <form action="../controller/form4.php" method="POST">
+            <fieldset style="width:40%;text-align: left;">
+            <legend>Formulario 4</legend>
+            <table>
+                <tr>
+                    <th style="text-align: left">Color:</th>
+                    <td>
+                        <input type="color" name="color_favorito"/>
+                    </td>
+                </tr>
+                <tr><td colspan="2"><hr/></td></tr>
+                <tr>
+                    <th style="text-align: left">Subir un archivo:</th>
+                    <td>
+                        <input type="file" name="archivo" required>
+                    </td>
+                </tr>
+                <tr><td colspan="2"><hr/></td></tr>
+                <tr>
+                    <th style="text-align: left">Su estatura:</th>
+                    <td>
+                        <input type="range" name="estatura" min="100" max="200" step="1" value="5" required>
+                    </td>
+                </tr>
+                <tr><td colspan="2"><hr/></td></tr>
+                <tr>
+                    <th> <input type="submit" value="Enviar"></th>
+                    <td><input type="reset"></td>
+                </tr>
+            </table>
+            </fieldset>
+        </form>
+        </div>
+
+        <br/>
+
+        <!--Quinto formulario-->
+        <div class="formularios5">
+        <form action="../controller/form5.php" method="POST">
+            <fieldset style="width:40%;text-align: left;">
+            <legend>Formulario 5</legend>
+            <table>
+                <tr>
+                    <th style="text-align: left">Estado civil:</th>
+                    <td>
+                        <select name="estado_civil" size="1" required>
+                            <option value="0">Selected>Escoja uno...</option>
+                            <option value="1">Casado</option>
+                            <option value="2">Soltero</option>
+                            <option value="3">Union libre</option>
+                        
+                        </select>
+                    </td>
+                </tr>
+                <tr><td colspan="2"><hr/></td></tr>
+                <tr>
+                    <th style="text-align: left">Idiomas que habla:</th>
+                    <td>
+                        <select name="idiomas" size="3" multiple required>
+                            <option value="esp">Español</option>
+                            <option value="ing">Ingles</option>
+                            <option value="ita">Italiano</option>
+                            <option value="port">Portugues</option>
+                            <option value="fra">Frances</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><td colspan="2"><hr/></td></tr>
+                <tr>
+                    <th> <input type="submit" value="Enviar"></th>
+                    <td><input type="reset"></td>
+                </tr>
+            </table>
+            </fieldset>
+        </form>
+        </div>
+
+        <br/>
+
+        <!--Sexto formulario-->
+        <div class="formularios6">
+        <form action="../controller/form6.php" method="POST">
+            <fieldset style="width:40%;text-align: left;">
+            <legend>Formulario 6</legend>
+            <table>
+                <tr>
+                    <th>Comentarios</th>
+                    <td>
+                        <textarea name="comentarios" cols="40" rows="5" required>Ingrese su comentario</textarea>
+                    </td>
+                </tr>
+                <tr><td colspan="2"><hr/></td></tr>
+                <tr>
+                    <th> <input type="submit" value="Enviar"></th>
+                    <td><input type="reset"></td>
+                </tr>
+            </table>
+            </fieldset>
+        </form>
+        </div>
+
+        <script src="vali.js"></script>
+</body>
+</html>

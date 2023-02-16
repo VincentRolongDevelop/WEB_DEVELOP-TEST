@@ -1,0 +1,88 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(../../model/813087.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+
+}
+
+.menu{
+
+    list-style: none;
+    padding: 0;
+    background-color: #092327;
+    width: 90px;
+    max-width: 1000px;
+    position: fixed;
+    margin: 0 left;
+    box-shadow: 0px 0px 2px white;
+
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+   
+   
+
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+    
+    
+}
+.menu li a:hover{
+
+background-color: #e8e8e8;
+color: #092327;
+
+}
+
+h1{
+   
+    color: #e8e8e8
+  
+        
+}
+.titulo{
+
+    background-color: #092327;
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+    height: 50px;
+    width: 450px;
+    margin: 0 auto;
+    padding: 19px;
+    box-shadow: 0px 0px 15px #000;
+}
+
+.parrafo{
+    
+    background-color: #ccc;
+    display: inline-block;
+    height: 100px;
+    margin:2rem auto;
+    text-align: center;
+    width: 450px;
+    box-shadow: 0px 0px 15px #000;
+}
+
+.parrafo p{
+
+    
+    padding-top: 0px;
+
+}
+
+
+
+
+
